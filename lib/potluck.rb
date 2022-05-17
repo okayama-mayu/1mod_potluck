@@ -8,6 +8,14 @@ class Potluck
   end
 
   def add_dish(dish)
-    dishes << dish 
+    dishes << dish
   end
+
+  def get_all_from_category(category_name)
+    dishes_in_cat = []
+    dishes.each do |dish|
+      if dish.category == category_name
+        dishes_in_cat << dish
+      end
+    end
 end
