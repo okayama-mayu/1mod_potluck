@@ -18,4 +18,6 @@ class Potluck
         dishes_in_cat << dish
       end
     end
+    dishes_in_cat
+  end
 end
